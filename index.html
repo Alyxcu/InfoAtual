@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoAtual - Sua fonte de notícias em tempo real</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>InfoAtual</h1>
+                <p>Notícias em tempo real</p>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Brasil</a></li>
+                    <li><a href="#">Mundo</a></li>
+                    <li><a href="#">Economia</a></li>
+                    <li><a href="#">Tecnologia</a></li>
+                    <li><a href="#">Esportes</a></li>
+                    <li><a href="#">Entretenimento</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="Buscar notícias...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Destaque Principal -->
+    <section class="featured-news">
+        <div class="container">
+            <div class="main-featured">
+                <a href="#" class="featured-card" data-id="1">
+                    <img src="https://picsum.photos/800/500?random=1" alt="Notícia em destaque">
+                    <div class="featured-content">
+                        <span class="category">Política</span>
+                        <h2>Governo anuncia novo pacote de medidas econômicas para o próximo ano</h2>
+                        <p>Medidas incluem redução de impostos para setores específicos e aumento do investimento em infraestrutura.</p>
+                        <div class="news-meta">
+                            <span><i class="far fa-clock"></i> <time datetime="2023-11-15">15/11/2023</time></span>
+                            <span><i class="far fa-eye"></i> 2.4k visualizações</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="secondary-featured">
+                <a href="#" class="secondary-card" data-id="2">
+                    <img src="https://picsum.photos/300/200?random=2" alt="Notícia secundária">
+                    <div class="secondary-content">
+                        <span class="category">Tecnologia</span>
+                        <h3>Nova inteligência artificial promete revolucionar busca na internet</h3>
+                        <div class="news-meta">
+                            <span><i class="far fa-clock"></i> <time datetime="2023-11-15">15/11/2023</time></span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" class="secondary-card" data-id="3">
+                    <img src="https://picsum.photos/300/200?random=3" alt="Notícia secundária">
+                    <div class="secondary-content">
+                        <span class="category">Esportes</span>
+                        <h3>Time local vence campeonato após 10 anos de espera</h3>
+                        <div class="news-meta">
+                            <span><i class="far fa-clock"></i> <time datetime="2023-11-15">15/11/2023</time></span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" class="secondary-card" data-id="4">
+                    <img src="https://picsum.photos/300/200?random=4" alt="Notícia secundária">
+                    <div class="secondary-content">
+                        <span class="category">Saúde</span>
+                        <h3>Pesquisadores descobrem novo tratamento para doença rara</h3>
+                        <div class="news-meta">
+                            <span><i class="far fa-clock"></i> <time datetime="2023-11-15">15/11/2023</time></span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Últimas Notícias -->
+    <section class="latest-news">
+        <div class="container">
+            <h2 class="section-title">Últimas Notícias</h2>
+            
+            <div class="news-grid">
+                <a href="#" class="news-card" data-id="5">
+                    <img src="https://picsum.photos/400/250?random=5" alt="Notícia">
+                    <div class="card-content">
+                        <span class="category">Economia</span>
+                        <h3>Mercado financeiro reage positivamente aos indicadores econômicos</h3>
+                        <p>Bolsa de valores tem alta recorde após divulgação de dados do emprego.</p>
+                        <div class="news-meta">
+                            <span><i class="far fa-clock"></i> <time datetime="2023-11-15">15/11/2023</time></span>
+                            <span class="read-more">Leia mais</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" class="news-card" data-id="6">
+                    <img src="https://picsum.photos/400/250?random=6" alt="Notícia">
+                    <div class="card-content">
+                        <span class="category">Meio Ambiente</span>
+                        <h3>Novo parque nacional é inaugurado na região norte</h3>
+                        <p>Área de preservação abrange mais de 500 mil hectares de floresta nativa.</p>
+                        <div class="news-meta">
+                            <span><i class="far fa-clock"></i> <time datetime="2023-11-15">15/11/2023</time></span>
+                            <span class="read-more">Leia mais</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" class="news-card" data-id="7">
+                    <img src="https://picsum.photos/400/250?random=7" alt="Notícia">
+                    <div class="card-content">
+                        <span class="category">Educação</span>
+                        <h3>Universidades anunciam novos cursos para o próximo semestre</h3>
+                        <p>Ênfase em áreas tecnológicas e sustentabilidade marca as novidades.</p>
+                        <div class="news-meta">
+                            <span><i class="far fa-clock"></i> <time datetime="2023-11-15">15/11/2023</time></span>
+                            <span class="read-more">Leia mais</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" class="news-card" data-id="8">
+                    <img src="https://picsum.photos/400/250?random=8" alt="Notícia">
+                    <div class="card-content">
+                        <span class="category">Internacional</span>
+                        <h3>Conferência global discute acordo de cooperação científica</h3>
+                        <p>Líderes mundiais se reúnem para tratar de pesquisas sobre mudanças climáticas.</p>
+                        <div class="news-meta">
+                            <span><i class="far fa-clock"></i> <time datetime="2023-11-15">15/11/2023</time></span>
+                            <span class="read-more">Leia mais</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" class="news-card" data-id="9">
+                    <img src="https://picsum.photos/400/250?random=9" alt="Notícia">
+                    <div class="card-content">
+                        <span class="category">Cultura</span>
+                        <h3>Festival de cinema anuncia programação com produções nacionais</h3>
+                        <p>Evento terá mostras competitivas e homenagens a cineastas consagrados.</p>
+                        <div class="news-meta">
+                            <span><i class="far fa-clock"></i> <time datetime="2023-11-15">15/11/2023</time></span>
+                            <span class="read-more">Leia mais</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" class="news-card" data-id="10">
+                    <img src="https://picsum.photos/400/250?random=10" alt="Notícia">
+                    <div class="card-content">
+                        <span class="category">Tecnologia</span>
+                        <h3>Startup nacional desenvolve aplicativo para monitoramento de energia</h3>
+                        <p>Ferramenta promete ajudar consumidores a reduzirem gastos com eletricidade.</p>
+                        <div class="news-meta">
+                            <span><i class="far fa-clock"></i> <time datetime="2023-11-15">15/11/2023</time></span>
+                            <span class="read-more">Leia mais</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="load-more">
+                <button>Carregar mais notícias</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Fique por dentro das notícias</h2>
+                <p>Inscreva-se em nossa newsletter e receba as principais notícias no seu e-mail</p>
+                <form>
+                    <input type="email" placeholder="Seu melhor e-mail" required>
+                    <button type="submit">Inscrever</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>InfoAtual</h3>
+                    <p>O seu site de notícias confiável e atualizado, trazendo as principais informações do Brasil e do mundo.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Categorias</h4>
+                    <ul>
+                        <li><a href="#">Brasil</a></li>
+                        <li><a href="#">Mundo</a></li>
+                        <li><a href="#">Economia</a></li>
+                        <li><a href="#">Tecnologia</a></li>
+                        <li><a href="#">Esportes</a></li>
+                        <li><a href="#">Entretenimento</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Anuncie</a></li>
+                        <li><a href="#">Termos de uso</a></li>
+                        <li><a href="#">Política de privacidade</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> granja ce</li>
+                        <li><i class="fas fa-phone"></i> (85) 997596906</li>
+                        <li><i class="fas fa-envelope"></i> Alycxsff@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 InfoAtual - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Notícia -->
+    <div class="news-modal" id="newsModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <h2 id="modal-title"></h2>
+                <div class="modal-meta">
+                    <span id="modal-category"></span>
+                    <span id="modal-date"></span>
+                </div>
+                <img id="modal-image" src="" alt="">
+                <div id="modal-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
